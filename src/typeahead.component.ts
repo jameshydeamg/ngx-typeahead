@@ -393,6 +393,7 @@ export class TypeaheadComponent implements ControlValueAccessor, AfterViewInit, 
       }
     }
     this._inputChangeEvent.next(target.value);
+    this.valueChange.next(target.value);
   }
 
   /**
